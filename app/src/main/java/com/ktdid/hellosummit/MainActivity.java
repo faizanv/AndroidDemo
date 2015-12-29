@@ -1,16 +1,22 @@
 package com.ktdid.hellosummit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Button btnImageLoader = (Button) findViewById(R.id.btn_launch_image_loader);
+        btnImageLoader.setOnClickListener(this);
     }
 
     @Override
@@ -33,5 +39,19 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.btn_launch_image_loader:
+                launchImageLoaderActivity();
+                break;
+        }
+    }
+
+    private void launchImageLoaderActivity() {
+        Intent intent = new Intent(this, ImageDownloadActivity.class);
+        startActivity(intent);
     }
 }

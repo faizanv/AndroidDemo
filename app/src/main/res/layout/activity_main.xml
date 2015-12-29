@@ -36,4 +36,11 @@
         android:layout_below="@+id/edit_text_main"
         android:src="@drawable/cmu_doggie" />
 
+    <Button
+            android:id="@+id/btn_launch_image_loader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_main"
+            android:text="@string/launch_image_downloader"/>
+
 </RelativeLayout>
