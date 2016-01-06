@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SummiteerFragment"
+    tools:showIn="@layout/activity_summiteer_layout">
+
+    <!-- Make sure to include this for the list of summiteers to appear -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/summiteer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>
