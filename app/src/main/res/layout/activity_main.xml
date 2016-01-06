@@ -37,10 +37,17 @@
         android:src="@drawable/cmu_doggie" />
 
     <Button
-            android:id="@+id/btn_launch_image_loader"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/image_main"
-            android:text="@string/launch_image_downloader"/>
+        android:id="@+id/btn_launch_image_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_main"
+        android:text="@string/launch_image_downloader" />
+
+    <Button
+        android:id="@+id/btn_launch_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_launch_image_loader"
+        android:text="@string/launch_recycler_view" />
 
 </RelativeLayout>
